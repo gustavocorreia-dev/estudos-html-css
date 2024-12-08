@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*
+Exemplo: HTML: id="principal"  /  CSS: h1#principal
+
+Exemplo: HTML: <div class="container">Conteúdo 1</div>
+<p class="texto">Texto 1</p>
+<p class="texto">Texto 2</p>
+CSS: .texto {
+    font-size: 16px;
+    color: blue;
+
+*/
+
+body {
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #1e402f
+}
+
+h1#principal {
+    text-align: center;
+    background-color: #3c805e;
+    color: white;
+}
+
+h2 {
+    color: rgb(51, 77, 49);;
+}
+
+.basico {
+    color: #3c805e;
+}
+
+.intermediario {
+    color: #ada41b;
+}
+
+.avancado {
+    color: #a72c2c;
+}
+
+.destaque {
+    background-color: #c5c56070;
+}
