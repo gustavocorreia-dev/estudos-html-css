@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário / Selecione as Opções</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            Selecione um Estado:
+        </p>
+        <p>
+            <label for="idest">Estado:</label>
+            <select name="estado" id="idest" required> <!-- A utilização do "required" significa que você precisa obrigatoriamente selecionar um Estado, caso contrário, o navegador não aceitará o envio do formulário -->
+                <option value="">--- Selecione ---</option> <!-- Aqui foi defenido um <option> sem valor, apenas indicando ao usuário que ele deve selecionar um Estado -->
+
+                <optgroup label="Região Sudeste"> <!-- Quando usamos essa tag <optgroup label="Região Sudeste"> envelopando um grupo de <option>, criamos uma espécie de categoria dentro da lista -->
+                    <option value="mg">Minas Gerais</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="sp">São Paulo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="ma">Maranhão</option>
+                    <option value="pe">Pernambuco</option>
+                    <option value="rn">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>Selecione uma profissão:</p>
+
+        <p>
+            <label for="idprof">Profissão:</label>
+            <input type="text" name="prof" id="idprof" list="lstprof" required> <!-- O "required" impede que o usuário envie o formulário sem antes selecionar uma opção -->
+            <datalist id="lstprof"> <!-- Quando usamos essa tag <datalist id="lstprof"> envelopando um grupo de <option>, criamos uma lista dentro da caixa de diálogo, possibilitando escolher uma opção da lista -->
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="idmsg">Mensagem:</label><br>
+            <textarea name="msg" id="idmsg" cols="30" rows="10"required></textarea> <!-- Essa tag <textarea> serve para criar uma caixa de texto, permitindo que o usuário escreva algo dentro dela -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
