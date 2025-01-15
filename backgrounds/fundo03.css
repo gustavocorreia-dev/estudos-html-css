@@ -1,0 +1,27 @@
+body {
+    height: 100vh;
+    background-color: black;
+    background-image: url('imagens/wallpaper002.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+
+    background-size: cover;
+
+    /* Shothand - background
+        Caso queira simplicar tudo em uma linha
+
+        background: color > image > repeat > attachment > position
+
+        o background-size é colocado separado
+        */
+}
+
+main {
+    background-color: white;
+    max-width: 400px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+}
